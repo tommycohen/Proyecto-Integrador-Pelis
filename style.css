@@ -13,7 +13,6 @@ nav {
   z-index: 999;
   overflow: hidden;
   box-shadow: -2px -2px 5px gray, 2px 2px 5px gray;
-  left: 0;
 }
 nav ul {
   margin: 0;
