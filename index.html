@@ -14,7 +14,7 @@
         </ul>
 
         <div class="topnav">
-          
+
           <div class="search-container">
             <form action="/action_page.php">
               <input type="text" placeholder="Search.." name="search">
@@ -23,20 +23,49 @@
           </div>
         </div>
 
+      <div class="">
 
         <ul class="ul-menu">
-          <li class="li-menu"><a class="item"href="#generos">GENEROS</a>
-              <ul>
+          <!-- <li class="li-menu"><a class="item"href="#generos">GENEROS</a> -->
+          <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction()">GENEROS
+              <i class="fa fa-caret-down"></i>
+            </button>
+                <div class="dropdown-content" id="myDropdown">
+                    <a href="#">ROMANCE</a>
+                    <a href="#">DRAMA</a>
+                    <a href="#">TERROR</a>
+                    <a href="#">ACCIÓN</a>
+                    <a href="#">COMEDIA</a>
+                </div>
+            </div>
+
+
+
+
+
+
+            <!-- <div class="dropdown">
+              <button onclick="myFunction()" class="dropbtn">GENEROS</button>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </div> -->
+
+              <!-- <ul>
                 <li><a href="#">DRAMA</a></li>
                 <li><a href="#">ROMANCE</a></li>
                 <li><a href="#">TERROR</a></li>
                 <li><a href="#">ACCIÓN</a></li>
                 <li><a href="#">COMEDIA</a></li>
-              </ul>
-          </li>
+              </ul> -->
+          <!-- </li> -->
           <li class="li-menu"><a class="item"href="#home">HOME</a></li>
           <li class="li-menu"><a class="item"href="#login">LOG IN</a></li>
         </ul>
+      </div>
       </nav>
     </header>
   <footer>
