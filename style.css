@@ -18,7 +18,7 @@ nav {
 <<<<<<< HEAD
 =======
   left: 0;
-  position: absolute;
+  position: fixed;
 >>>>>>> master
 }
 nav ul {
@@ -61,6 +61,7 @@ nav a {
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #ff494f;
 }
 
 .topnav {
@@ -205,6 +206,18 @@ background: rgb(104, 242, 204);
 }
 
 
+footer {
+  min-height: 200px;
+  width: 100%;
+  -webkit-box-shadow: 0px -10px 9px -10px rgba(0,0,0,.8);
+  -moz-box-shadow: 0px -10px 9px -10px rgba(0,0,0,.8);
+   box-shadow: 0px -10px 9px -10px rgba(0,0,0,.8);
+   margin-top: 1000px;
+   margin-bottom: -500px;
+   background-color: rgb(104,242,204);
+   color: white;
+   text-align: center;
+}
 
 
 
