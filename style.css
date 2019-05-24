@@ -58,7 +58,7 @@ nav a {
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-image: url(http://www.lapaginademmm.com/sky.gif);
+  background-color: black;
 }
 
 .topnav {
@@ -219,6 +219,8 @@ footer {
    background-color: rgb(104,242,204);
    color: white;
    text-align: center;
+   position: absolute;
+   bottom: 0px;
 }
 
 div.lcdtm {
@@ -247,11 +249,11 @@ div.estrenos img{
 
 .w-100{
   width: 90%;
-  height: 85vh;
+  height: 61vh;
 }
 
 .carrusel{
-  margin-top: 10%;
+  margin-top: 150px;
   margin-right: 5%;
   margin-left: 5%;
   margin-bottom: 5%;
@@ -262,7 +264,10 @@ div.estrenos img{
     border-radius: 20%;
 }
 
-
+.carousel-inner{
+  width: 60%;
+  margin: 0 auto;
+}
 
 
 
