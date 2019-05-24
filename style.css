@@ -58,7 +58,7 @@ nav a {
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-image: url(https://st3.depositphotos.com/4648565/12638/v/600/depositphotos_126380458-stock-video-neon-motion-background-abstract-backdrop.jpg);
+  background-image: url(http://www.lapaginademmm.com/sky.gif);
 }
 
 .topnav {
@@ -250,9 +250,12 @@ div.estrenos img{
   margin-right: 5%;
   margin-left: 5%;
   margin-bottom: 5%;
+
 }
 
-
+.carrusel img{
+    border-radius: 20%;
+}
 
 
 
