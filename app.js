@@ -1,8 +1,5 @@
 window.onload = function(){
 
-
-
-
   window.onclick = function(e) {
     var myDropdown = document.getElementById("myDropdown");
 
@@ -16,10 +13,8 @@ window.onload = function(){
 
 
         myDropdown.classList.add('show');
-      
+
     }
   }
-
-
 
 }
