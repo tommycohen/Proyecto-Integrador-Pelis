@@ -294,6 +294,14 @@ div.estrenos img{
   margin: 0 auto;
 }
 
+.h3_carousel{
+  text-decoration: none;
+  color: black;
+}
+
+.h3_carousel:hover{
+  color: black;
+}
 
 
 
