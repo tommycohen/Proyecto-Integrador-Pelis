@@ -425,6 +425,12 @@ bottom: -9px;
 background-color: rgb(110, 241, 204)
 }
 
+.button_buscador{
+  width: 16%;
+    position: relative;
+    top: -45px;
+    left: 8px;
+}
 
 
 @media screen and (max-width: 600px) {
