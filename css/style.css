@@ -38,6 +38,10 @@ nav li.li-menu {
   font-size: 1em;
   font-weight: bold;
   margin-top: 7%;
+  position: relative;
+    top: -17px;
+    width: 10%;
+    height: 5vh;
 }
 nav li.li-menu:hover{
 	border-bottom: 1px solid #085955;
@@ -228,6 +232,18 @@ button.dropbtn{
 background: rgb(104, 242, 204);
 }
 
+button.boton_log_in{
+  padding-top: 18px;
+    width: 17%;
+    height: 7px;
+}
+
+button.boton_log_in:hover{
+  border-bottom: 1px solid #085955;
+border-width: medium;
+padding-top: 18px;
+    padding-bottom: 27px;
+  }
 
 footer {
 
