@@ -257,7 +257,6 @@ footer {
    background-color: black;
    color: white;
    text-align: center;
-   position: absolute;
    bottom: 0px;
    overflow: hidden;
    width: 100%;
@@ -420,6 +419,8 @@ span.psw {
   to {transform: scale(1)}
 }
 
+
+
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
   span.psw {
@@ -449,7 +450,9 @@ background-color: rgb(110, 241, 204)
     left: 8px;
 }
 
-
+.subtitulo{
+  color: white;
+}
 @media screen and (max-width: 600px) {
   .topnav .search-container {
     float: none;
