@@ -230,21 +230,20 @@ nav ul.ul-menu li a.item:hover {
 
 .show {display: block;}
 
-button.dropbtn{
-background: rgb(104, 242, 204);
-}
+
 
 button.boton_log_in{
   padding-top: 18px;
     width: 17%;
     height: 7px;
+    position: relative;
+top: 6px;
+}
 }
 
 button.boton_log_in:hover{
-  border-bottom: 1px solid #085955;
-border-width: medium;
-padding-top: 18px;
-    padding-bottom: 27px;
+    border-bottom: 1px solid #085955;
+    border-width: medium;
   }
 
 footer {
@@ -420,6 +419,19 @@ span.psw {
   to {transform: scale(1)}
 }
 
+
+a.item{
+  position: relative;
+bottom: -18px;
+left: -22px;
+}
+}
+
+
+
+
+
+
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
   span.psw {
@@ -448,6 +460,17 @@ background-color: rgb(110, 241, 204)
     top: -45px;
     left: 8px;
 }
+button.dropbtn{
+background: rgb(104, 242, 204);
+padding-top: 23px;
+position: relative;
+left: -32px;
+}
+button.dropbtn:hover{
+  background-color: rgb(104,242,204);
+  border-bottom: 1px solid #085955;
+  border-width: medium;
+}
 
 
 @media screen and (max-width: 600px) {
@@ -465,5 +488,10 @@ background-color: rgb(110, 241, 204)
   .topnav input[type=text] {
     border: 1px solid #ccc;
   }
-
+  button.dropbtn{
+  background: rgb(104, 242, 204);
+  padding-top: 23px;
+  position: relative;
+  left: -32px;
+  }
 }
