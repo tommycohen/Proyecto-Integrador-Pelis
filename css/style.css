@@ -44,7 +44,7 @@ nav li.li-menu {
     height: 5vh;
 }
 nav li.li-menu:hover{
-	border-bottom: 1px solid #085955;
+	border-bottom: 10px solid #085955;
   border-width: medium;
 }
 nav a {
@@ -226,6 +226,7 @@ ul.ul-menu{
 nav ul.ul-menu li a.item:hover {
   text-decoration: none;
   color: white;
+
 }
 
 .show {display: block;}
@@ -424,6 +425,7 @@ a.item{
   position: relative;
 bottom: -18px;
 left: -22px;
+
 }
 }
 
