@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/busqueda.css">
+
+  </head>
+  <body>
+    <header id="header">
+      <nav>
+          <ul class="ul-logo">
+            <a href="index.html"><li class="li-logo"><img src="img/logo.png" alt=""></li></a>
+          </ul>
+          <div class="topnav">
+            <div class="search-container">
+              <form action="/action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit" class="button_buscador"><i class="fa fa-search"></i></button>
+              </form>
+            </div>
+          </div>
+        <div class="">
+
+        <ul class="ul-menu">
+          <div class="dropdown">
+            <button class="dropbtn">GENEROS
+              <i class="fa fa-caret-down"></i>
+            </button>
+                <div class="dropdown-content" id="myDropdown">
+
+                </div>
+            </div>
+
+          <li class="li-menu"><a class="item"href="index.html">HOME</a></li>
+          <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="boton_log_in">LOG IN</button>
+
+          <div id="id01" class="modal">
+              <form class="modal-content animate" action="/action_page.php">
+                  <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <img src="img/4.png" alt="Avatar" class="avatar">
+                  </div>
+
+                  <div class="container">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <button type="submit">Login</button>
+                    <label>
+                      <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                  </div>
+
+                  <div class="container" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                  </div>
+              </form>
+          </div>
+            </ul>
+        </div>
+      </nav>
+    </header>
+
+<section>
+  <div class="busqueda">
+<h1>hola</h1>
+<h2>que</h2>
+<h3>haces</h3>
+  </div>
+</section>
+
+
+
+    <footer>
+    <div class="padre-footer">
+    <div class="copyright">
+      <h2>Tommy Cohen</h2>
+
+    </div>
+    <div class="copyright">
+    <h2>Jonathan Brener</h2>
+    </div>
+    <div class="copyright">
+    <h2>Camila Spokojny</h2>
+    </div>
+    </div>
+
+    </footer>
+
+  </body>
+</html>
+<script src="js/app.js" type="text/javascript"></script>
+
+<script src="js/busqueda.js" charset="utf-8"> </script>

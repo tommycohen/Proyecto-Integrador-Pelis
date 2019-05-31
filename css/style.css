@@ -474,6 +474,9 @@ button.dropbtn:hover{
   border-width: medium;
 }
 
+img.d-block.w-100{
+  height: 53vh;
+}
 
 @media screen and (max-width: 600px) {
   .topnav .search-container {
