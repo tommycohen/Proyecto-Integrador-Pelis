@@ -67,6 +67,15 @@ window.onload = function(){
 
 
 
+var urlPeliculas =
+var urlEstrenosDos =
+var urlProximasPeliculas =
+var mejoresPunteadas =
+
+
+
+
+
 
 
 }
