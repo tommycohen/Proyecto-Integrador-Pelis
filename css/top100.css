@@ -1,0 +1,40 @@
+*{
+    font-family: monaco;
+    box-sizing: border-box;
+}
+.contenedor{
+  overflow: hidden;
+}
+
+.peliculas {
+  float: left;
+  width: 30%;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  margin-right: 5%;
+  background-color:#61F3CC ;
+}
+.peliculas:nth-child(3n){
+  margin-right: 0;
+}
+ img.imagenes {
+  max-width: 100%;
+}
+
+a{
+  color: white;
+  font-size: 16px;
+}
+
+
+h2.titulo-producto{
+  text-align: center;
+}
+
+h2.titulo-producto{
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 8px;
+  font-size: 1rem;
+}
