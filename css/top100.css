@@ -19,6 +19,8 @@
 }
  img.imagenes {
   max-width: 100%;
+  border: white;
+ border-style: double;
 }
 
 a{
@@ -31,6 +33,33 @@ h2.titulo-producto{
   text-align: center;
 }
 
+#top100{
+  text-align: center;
+  color: white;
+  padding-top: 40px;
+  }
+
+  h2.subtitulo{
+    font-size: 2rem;
+    background-color: #68f2cc;
+    color: white;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 20px;
+    border-style: double;
+    border-color: black;
+  }
+
+  h2.subtitulo{
+    font-size: 2rem;
+    background-color: #68f2cc;
+    color: white;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 20px;
+    border-style: double;
+    border-color: black;
+  }
 h2.titulo-producto{
   width: 80%;
   text-align: center;

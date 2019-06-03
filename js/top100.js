@@ -9,8 +9,10 @@ fetch(urltop100)
   })
   .then(function(data) {
     console.log(data.results);
+    var  arrayDePopulares = data.results
 
-    for (var i = 0; i < 6; i++) {
+
+    for (var i = 0; i < arrayDePopulares.length; i++) {
       var id = data.results[i].id
       var titulo = data.results[i].title
       var imagen = data.results[i].poster_path
