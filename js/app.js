@@ -64,19 +64,7 @@ window.onload = function(){
   console.log("Error: " + error);
   })
 
-
-
-
-var urlPeliculas =
-var urlEstrenosDos =
-var urlProximasPeliculas =
-var mejoresPunteadas =
-
-
-
-
-
-
+  
 
 }
 
