@@ -21,14 +21,20 @@
   max-width: 100%;
 }
 
-section.section-estrenos h2.titulo-producto {
-  width: 80%;
-  text-align: center;
-  margin: auto;
-  padding-top: 8px;
-  font-size: 1rem;
-}
 a{
   color: white;
   font-size: 16px;
+}
+
+
+h2.titulo-producto{
+  text-align: center;
+}
+
+h2.titulo-producto{
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 8px;
+  font-size: 1rem;
 }
