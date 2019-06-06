@@ -38,7 +38,7 @@ window.onload = function(){
 
 
   var soyLaUrl = "https://api.themoviedb.org/3/genre/movie/list?api_key=7beff09c9fd5a79010c5ce4883840da9&language=en-US"
-  fetch("https://api.themoviedb.org/3/genre/movie/list?api_key=7beff09c9fd5a79010c5ce4883840da9&language=en-US")
+  fetch(soyLaUrl)
   .then(function(response) {
   return response.json()
   })
@@ -64,7 +64,7 @@ window.onload = function(){
   console.log("Error: " + error);
   })
 
-  
+
 
 }
 
