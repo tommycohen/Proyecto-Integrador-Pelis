@@ -96,10 +96,24 @@ fetch(urlEstrenos)
     console.log(data.results);
 
     var arrayDeEstrenos= data.results
-
+    var div
     for (var i = 0; i < arrayDeEstrenos.length; i++) {
       var imagen = data.results[i].poster_path
-      document.querySelector('div.carousel-inner').innerHTML += "<div class='carousel-item active'> <div class='carousel-caption d-none d-md-block'> <img src='" + urlConstante + imagen + "'class='d-block w-100' alt='350px'> <a href='peliculas.html' class='h3_carousel'> <h3>Peliculas</h3> </a> <p>Si desea ver mas peliculas, haga click en el boton peliculas</p></div></div>"
+      if(i===0){
+        div = "<div class='carousel-item active'>"
+      }else{
+        div = "<div class='carousel-item'>"
+      }
+        div += "<div class='carousel-caption d-none d-md-block'>"
+          div += "<img src='" + urlConstante + imagen + "' class='d-block w-100' alt='350px'>"
+          div += "<a href='peliculas.html' class='h3_carousel'>"
+            div += "<h3>Peliculas</h3>"
+          div += "</a>"
+          div += "<p>Si desea ver mas peliculas, haga click en el boton peliculas</p>"
+        div += "</div>"
+      div += "</div>"
+console.log("<div class='carousel-item active'> <div class='carousel-caption d-none d-md-block'> <img src='" + urlConstante + imagen + "' class='d-block w-100' alt='350px'> <a href='peliculas.html' class='h3_carousel'> <h3>Peliculas</h3> </a> <p>Si desea ver mas peliculas, haga click en el boton peliculas</p></div></div>");
+      document.querySelector('div.carousel-inner.estrenos').innerHTML += div
 
     }
   })
