@@ -16,31 +16,51 @@ window.addEventListener("load", function(){
 
     }
   }
-  // Get the modal
-var modal = document.getElementById('id01');
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-window.onclick = function(e) {
-  var myDropdown = document.getElementById("myDropdown");
-
-  if (!e.target.matches('.dropbtn')) {
-
-
-
-      myDropdown.classList.remove('show');
-
-  } else {
-
-
-      myDropdown.classList.add('show');
-
-  }
-}
+  var working = false;
+$('.login').on('submit', function(e) {
+  e.preventDefault();
+  if (working) return;
+  working = true;
+  var $this = $(this),
+    $state = $this.find('button > .state');
+  $this.addClass('loading');
+  $state.html('Authenticating');
+  setTimeout(function() {
+    $this.addClass('ok');
+    $state.html('Welcome back!');
+    setTimeout(function() {
+      $state.html('Log in');
+      $this.removeClass('ok loading');
+      working = false;
+    }, 4000);
+  }, 3000);
+});
+//   // Get the modal
+// var modal = document.getElementById('id01');
+//
+// // When the user clicks anywhere outside of the modal, close it
+// window.onclick = function(event) {
+//     if (event.target == modal) {
+//         modal.style.display = "none";
+//     }
+// }
+// window.onclick = function(e) {
+//   var myDropdown = document.getElementById("myDropdown");
+//
+//   if (!e.target.matches('.dropbtn')) {
+//
+//
+//
+//       myDropdown.classList.remove('show');
+//
+//   } else {
+//
+//
+//       myDropdown.classList.add('show');
+//
+//   }
+// }
 
 function filterFunction() {
   var input, filter, ul, li, a, i;
@@ -96,25 +116,17 @@ fetch(urlEstrenos)
     console.log(data.results);
 
     var arrayDeEstrenos= data.results
-    var div
+    var li
     for (var i = 0; i < arrayDeEstrenos.length; i++) {
       var imagen = data.results[i].poster_path
-      if(i===0){
-        div = "<div class='carousel-item active'>"
-      }else{
-        div = "<div class='carousel-item'>"
-      }
-        div += "<div class='carousel-caption d-none d-md-block'>"
-          div += "<img src='" + urlConstante + imagen + "' class='d-block w-100' alt='350px'>"
-          div += "<a href='peliculas.html' class='h3_carousel'>"
-            div += "<h3>Peliculas</h3>"
-          div += "</a>"
-          div += "<p>Si desea ver mas peliculas, haga click en el boton peliculas</p>"
-        div += "</div>"
-      div += "</div>"
-console.log("<div class='carousel-item active'> <div class='carousel-caption d-none d-md-block'> <img src='" + urlConstante + imagen + "' class='d-block w-100' alt='350px'> <a href='peliculas.html' class='h3_carousel'> <h3>Peliculas</h3> </a> <p>Si desea ver mas peliculas, haga click en el boton peliculas</p></div></div>");
-      document.querySelector('div.carousel-inner.estrenos').innerHTML += div
+      li = "<li class='mySlides1'>"
+        li += "<img src='" + urlConstante + imagen + "' >"
+      li += '</li>'
 
+// console.log("<div class='carousel-item active'> <div class='carousel-caption d-none d-md-block'> <img src='" + urlConstante + imagen + "' class='d-block w-100' alt='350px'> <a href='peliculas.html' class='h3_carousel'> <h3>Peliculas</h3> </a> <p>Si desea ver mas peliculas, haga click en el boton peliculas</p></div></div>");
+      document.querySelector('ul.estrenos').innerHTML += li
+      //dejo visivle solo la primer imagen
+      showSlides(1, 0);
     }
   })
 
@@ -128,3 +140,21 @@ console.log("<div class='carousel-item active'> <div class='carousel-caption d-n
 
 
 })
+var slideIndex = [1,1];
+var slideId = ["mySlides1", "mySlides2"]
+
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex[no]-1].style.display = "block";
+}
