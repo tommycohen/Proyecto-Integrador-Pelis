@@ -3,6 +3,44 @@
     box-sizing: border-box;
 }
 
+#estrenos-carousel{
+  margin-top: 7%;
+color: white;
+text-align: center;
+position: absolute;
+z-index: 1;
+font-size: 2rem;
+    background-color: #68f2cc;
+    color: white;
+    width: 15%;
+    margin: 0 auto;
+    border-radius: 20px;
+    border-style: double;
+    border-color: black;
+    bottom: 85%;
+    margin-left: 11%;
+    text-decoration: none;
+}
+
+
+
+
+.carousel1{
+  width: 50%;
+border-radius: 20%;
+height: 62vh;
+
+}
+
+a.prev{
+  left: 5%;
+}
+
+a.next{
+  right: 49%;
+}
+
+
 header {
   width: 100%;
   position: fixed;
@@ -427,7 +465,7 @@ span.psw {
 
 a.item{
   position: relative;
-bottom: -18px;
+bottom: 2px;
 left: -22px;
 
 }
@@ -438,10 +476,16 @@ div.carousel-caption {
 }
 
 /* Slideshow container */
-.slideshow-container {
+ul.slideshow-container {
   max-width: 1000px;
   position: relative;
   margin: auto;
+  float: left;
+  margin-top: 150px;
+}
+
+.contenedorPadre{
+  overflow: hidden;
 }
 
 /* Hide the images by default */
@@ -527,6 +571,7 @@ div.mySlides1, div.mySlides2 {
 
 button.dropbtn{
   padding-top: 8px;
+  height: 1vh;
 }
 
 .boton_log_in{

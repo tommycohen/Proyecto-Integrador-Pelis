@@ -120,7 +120,7 @@ fetch(urlEstrenos)
     for (var i = 0; i < arrayDeEstrenos.length; i++) {
       var imagen = data.results[i].poster_path
       li = "<li class='mySlides1'>"
-        li += "<img src='" + urlConstante + imagen + "' >"
+        li += "<img class='carousel1' src='" + urlConstante + imagen + "' >"
       li += '</li>'
 
 // console.log("<div class='carousel-item active'> <div class='carousel-caption d-none d-md-block'> <img src='" + urlConstante + imagen + "' class='d-block w-100' alt='350px'> <a href='peliculas.html' class='h3_carousel'> <h3>Peliculas</h3> </a> <p>Si desea ver mas peliculas, haga click en el boton peliculas</p></div></div>");
