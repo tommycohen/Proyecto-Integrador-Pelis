@@ -106,7 +106,7 @@ for (var i = 0; i < generos_array.length; i++) {
 console.log("Error: " + error);
 })
 
-  var urlEstrenos = "https://api.themoviedb.org/3/movie/popular?api_key=ebcc7d54892cbf6b9dd7c194bd052f2f&language=en-US&page=1"
+  var urlEstrenos = "https://api.themoviedb.org/3/movie/upcoming?api_key=ebcc7d54892cbf6b9dd7c194bd052f2f&page=1"
  var urlConstante = "https://image.tmdb.org/t/p/original/"
 fetch(urlEstrenos)
   .then(function(response) {
@@ -118,9 +118,14 @@ fetch(urlEstrenos)
     var arrayDeEstrenos= data.results
     var li
     for (var i = 0; i < arrayDeEstrenos.length; i++) {
+      console.log(arrayDeEstrenos);
+      var id = data.results[i].id
+      var titulo = data.results[i].title
       var imagen = data.results[i].poster_path
       li = "<li class='mySlides1'>"
+        li += '<a href="detallePelicula.html?id='+id+'">'
         li += "<img class='carousel1' src='" + urlConstante + imagen + "' >"
+        li+= "</a>"
       li += '</li>'
 
 // console.log("<div class='carousel-item active'> <div class='carousel-caption d-none d-md-block'> <img src='" + urlConstante + imagen + "' class='d-block w-100' alt='350px'> <a href='peliculas.html' class='h3_carousel'> <h3>Peliculas</h3> </a> <p>Si desea ver mas peliculas, haga click en el boton peliculas</p></div></div>");
