@@ -3,8 +3,10 @@
     box-sizing: border-box;
 }
 
-.estrenos-imagenes{
-  width: 100%;
+img.estrenos-imagenes {
+    width: 100%;
+    border: white;
+    border-style: double;
 }
 
     section.section-busqueda h2.titulo-producto {
