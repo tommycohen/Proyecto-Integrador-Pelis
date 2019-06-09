@@ -15,8 +15,13 @@ fetch("https://api.themoviedb.org/3/search/movie?api_key=7beff09c9fd5a79010c5ce4
         var id = informacion.results[i].id
         var titulo = informacion.results[i].title
         var imagen = informacion.results[i].poster_path
+        if (imagen == null) {
+          imagen = "img/nodisponible.jpg"
+        }else {
+          imagen = "https://image.tmdb.org/t/p/original" + informacion.results[i].poster_path
+        }
         console.log(titulo)
-        document.querySelector(".contenedor_busqueda").innerHTML += "<article class='peliculas'><img class='estrenos-imagenes' src='https://image.tmdb.org/t/p/original" + imagen + "' alt='img producto'><h2 class='titulo-producto'><a href=detallePelicula.html?id=" + id +  ">" + titulo + "</a></h2></article>"
+        document.querySelector(".contenedor_busqueda").innerHTML += "<article class='peliculas'><img class='estrenos-imagenes' src='" + imagen + "' alt='img producto'><h2 class='titulo-producto'><a href=detallePelicula.html?id=" + id +  ">" + titulo + "</a></h2></article>"
       }
   })
   .catch(function(error) {
