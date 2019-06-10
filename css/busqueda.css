@@ -57,3 +57,20 @@ img.estrenos-imagenes {
     section.section-busqueda img{
       max-width: 100%;
     }
+
+    .button_buscador{
+      width: 20%;
+    position: relative;
+    top: -44px;
+    left: 180px;
+    height: -1px;
+    padding-top: 0px;
+    padding-left: 12px;
+    padding-bottom: 6px;
+    background-color: gainsboro;}
+
+    form.busqueda input{
+    position: relative;
+    bottom: 8px;
+    left: 65px;
+}

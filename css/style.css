@@ -594,9 +594,7 @@ position: relative;
 left: -32px;
 }
 button.dropbtn:hover{
-  background-color: rgb(104,242,204);
-  border-bottom: 1px solid #085955;
-  border-width: medium;
+  color: #000!important;
 }
 
 img.d-block.w-100{
@@ -784,7 +782,43 @@ footer {
   }
 }
 
+form.busqueda{
+  position: absolute;
+}
+form.busqueda input{
+  position: relative;
+    bottom: -31px;
+    left: 65px;
+}
 
+a.item{
+  position: relative;
+    bottom: -17px;
+}
+
+a.item:hover{
+  color: #000!important;
+  color: black;
+}
+
+button.w3-button.w3-black{
+  position: relative;
+bottom: -18px;
+left: -23px;
+background-color: rgb(104,242,204)!important
+}
+
+.button_buscador{
+  width: 20%;
+position: relative;
+top: -5px;
+left: 256px;
+height: -1px;
+padding-top: 0px;
+padding-left: 12px;
+padding-bottom: 6px;
+background-color: gainsboro;
+}
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
   span.psw {
