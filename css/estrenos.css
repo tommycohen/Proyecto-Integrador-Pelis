@@ -223,10 +223,6 @@ ul.ul-menu{
 
 .show {display: block;}
 
-nav ul.ul-menu li a.item:hover {
-  text-decoration: none;
-  color: white;
-}
 
 .show {display: block;}
 
@@ -547,6 +543,21 @@ padding-bottom: 6px;
 background-color: gainsboro;
 }
 
+button.dropbtn{
+  position: relative;
+bottom: -15px;
+}
+
+button.dropbtn:hover{
+  background-color:  rgb(104,242,204)!important;
+}
+button.dropbtn:focus{
+  background-color:  rgb(104,242,204)!important;
+}
+nav ul.ul-menu li a.item:hover{
+  text-decoration: none;
+  color: #000!important;
+}
 
 @media screen and (max-width: 600px) {
   .topnav .search-container {

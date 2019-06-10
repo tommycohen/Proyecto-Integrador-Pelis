@@ -819,6 +819,12 @@ padding-left: 12px;
 padding-bottom: 6px;
 background-color: gainsboro;
 }
+
+.titulo_carrousel:hover{
+  color: gainsboro!important;
+}
+
+
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
   span.psw {
