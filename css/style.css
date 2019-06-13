@@ -842,6 +842,20 @@ a#top100-carrousel{
 }
 
 
+section{
+  overflow: hidden;
+}
+section a.titulo_carrousel{
+  width: 100%;
+}
+
+section ul.slideshow-container{
+  width: 100%;
+}
+section img{
+  width: 100%;
+}
+
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
   span.psw {
