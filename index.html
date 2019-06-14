@@ -8,8 +8,6 @@
     <link rel="icon" type="image/png" href="images/favicon.ico"/>
 
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
-
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
@@ -44,9 +42,8 @@
                         <p class="title">Log in</p>
                         <input type="text" placeholder="Username" autofocus/>
                         <i class="fa fa-user"></i>
-                        <input type="password" placeholder="Password" />
+                        <input type="email" placeholder="Email" />
                         <i class="fa fa-key"></i>
-                        <a href="#">Forgot your password?</a>
                         <button>
                           Log in
                         </button>
@@ -58,7 +55,7 @@
             </li>
             <li class="topnav">
               <form action="buscador.html" method="get" class="busqueda">
-                <input type="text" placeholder="Search.." name="buscador">
+                <input type="text" placeholder="Search.." name="buscador" class="texto-busqueda">
                 <button type="submit" class="button_buscador"><i class="fa fa-search"></i></button>
               </form>
             </li>
@@ -82,12 +79,37 @@
 </section>
 <section>
 
-  <a href="top100.html" id="top100-carrousel">Las Mas Populares</a>
-  <ul class="slideshow-container">
+  <a href="popular.html" id="top100-carrousel" class="titulo_carrousel">Peliculas Populares</a>
+  <ul class="slideshow-container populares">
 
 
       <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
       <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+  </ul>
+
+
+</section>
+
+<section>
+
+  <a href="top100.html" id="mejorPuntuadas-carrousel" class="titulo_carrousel">Peliculas mejores punteadas</a>
+  <ul class="slideshow-container mejorPuntuadas">
+
+
+      <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+  </ul>
+
+
+</section>
+<section>
+
+  <a href="prox.html" id="mejorPuntuadas-carrousel" class="titulo_carrousel">Proximas Peliculas</a>
+  <ul class="slideshow-container proximasPeliculas">
+
+
+      <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
   </ul>
 
 
