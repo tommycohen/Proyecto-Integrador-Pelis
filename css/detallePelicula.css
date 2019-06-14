@@ -8,5 +8,13 @@ border-radius: 20px;
 border-style: double;
 border-color: black;
 text-align: center;
-top: 5%;
+top: 10%;
+}
+ul.info{
+  text-align: center;
+  list-style-type: none;
+  color: rgb(104,242,204);
+}
+li.titulo {
+  font-size: 1.5rem;
 }
