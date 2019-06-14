@@ -33,23 +33,29 @@
               </div>
             </li>
             <li class="li-menu"><a class="item"href="index.html">HOME</a></li>
+            <li class="nombre"></li>
             <li class="w3-container">
-              <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">LOG IN</button>
+              <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black " id="login">LOG IN</button>
+              <button type="button" name="button" class="boton_logOut">LOG OUT</button>
+              <a href="peliculasPreferidas" class="preferidas">Peliculas favoritas</a>
               <div id="id01" class="w3-modal w3-animate-opacity">
                 <div class="w3-modal-content w3-card-4">
                   <div class="wrapper">
-                    <form action="index.html" method="GET">
+                    <form action="index.html" method="GET" class="formularioDeLogIn">
                         <p class="title">Log in</p>
-                        <input type="text" placeholder="Username" autofocus/>
+                        <input type="text" name="nombre" placeholder="Name" autofocus/>
                         <i class="fa fa-user"></i>
-                        <input type="email" placeholder="Email" />
+                        <input type="email" name="email" placeholder="Email" />
                         <i class="fa fa-key"></i>
-                        <button>
-                          Log in
+                        <button type="submit">
+                          INGRESAR
                         </button>
+                        <button class="boton_cancelar" type="reset" onclick="document.getElementById('id01').style.display='none'">CANCELAR</button>
+
                     </form>
                     </p>
                   </div>
+
                 </div>
               </div>
             </li>
@@ -135,5 +141,8 @@
   </body>
 </html>
 <script type="text/javascript" src="js/index.js">
+
+</script>
+<script type="text/javascript" src="js/general.js">
 
 </script>

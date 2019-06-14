@@ -503,8 +503,7 @@ span.psw {
 
 a.item{
   position: relative;
-bottom: 2px;
-left: -22px;
+
 
 }
 
@@ -831,7 +830,7 @@ form.busqueda input{
 
 a.item{
   position: relative;
-    bottom: -17px;
+  bottom: -4px;
 }
 
 a.item:hover{
@@ -885,6 +884,54 @@ section ul.slideshow-container{
 }
 section img{
   width: 100%;
+}
+
+.boton_cancelar{
+  background-color: #f4511e;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.preferidas{
+  display: none;
+}
+
+li.nombre{
+  position: relative;
+    right: 16px;
+    bottom: -19px;
+    color: white;
+}
+
+a.preferidas{
+  position: relative;
+bottom: 34px;
+right: 16px;
+}
+
+a.preferidas:hover{
+  color: #000!important;
+}
+
+.boton_logOut{
+  width: 103PX;
+position: relative;
+right: -161px;
+bottom: -13px;
+background-color: rgb(104, 242, 204);
+}
+
+.boton_logOut:hover{
+  color: #000!important;
 }
 
 /* Change styles for span and cancel button on extra small screens */
