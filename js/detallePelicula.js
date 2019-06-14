@@ -1,4 +1,6 @@
 window.addEventListener("load", function(){
+
+
   var queryString = new URLSearchParams(location.search);
   var detalles = queryString.get('id');
 
@@ -17,6 +19,16 @@ fetch(detallePelicula)
   document.querySelector(".lenguaje").innerHTML = "Lenguaje original:" + " " + informacion.original_language
   document.querySelector(".generos").innerHTML = informacion.genres.name
   document.querySelector(".estreno").innerHTML = "Fecha de estreno:" + " " + informacion.release_date
+
+  fetch("https://api.themoviedb.org/3/movie/" + detalles + "/videos?api_key=ebcc7d54892cbf6b9dd7c194bd052f2f")
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(infoVideo) {
+    var codigoVideo = infoVideo.results[0].key
+
+    document.querySelector("#trailer").src += codigoVideo
+  })
 
 
       //document.querySelector(".contenedor_busqueda").innerHTML += "<article class='peliculas'><img class='estrenos-imagenes' src='" + imagen + "' alt='img producto'><h2 class='titulo-producto'><a href=detallePelicula.html?id=" + id +  ">" + titulo + "</a></h2></article>"

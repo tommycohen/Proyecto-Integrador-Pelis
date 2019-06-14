@@ -48,3 +48,38 @@ img.generos-imagenes{
   align-items: center;
   width: 30%;
 }
+h2.nombre{
+  margin-top: 3%;
+}
+
+li.titulo{
+  font-size: 250%;
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 20px;
+  color: white;
+}
+
+li.poster{
+}
+
+li.generos{
+
+}
+
+li.lenguaje{
+
+}
+li.sinopsis{
+  margin: 0 auto;
+  width: 50%;
+
+}
+
+#trailer{
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  border: white;
+  border-style: solid;
+}
