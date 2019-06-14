@@ -214,7 +214,7 @@ ul.ul-menu{
 
 .dropdown-content a {
   color: black;
-  padding: 12px 16px;
+  padding: 2px 16px;
   text-decoration: none;
   display: block;
 }
@@ -555,6 +555,24 @@ nav ul.ul-menu li a.item:hover{
   text-decoration: none;
   color: #000!important;
 }
+form.busqueda{
+  position: absolute;
+}
+form.busqueda input {
+    position: relative;
+    bottom: -31px;
+    left: 65px;}
+
+    .button_buscador{
+      width: 20%;
+    position: relative;
+    top: -5px;
+    left: 256px;
+    height: -1px;
+    padding-top: 0px;
+    padding-left: 12px;
+    padding-bottom: 6px;
+    background-color: gainsboro;}
 
 @media screen and (max-width: 600px) {
   .topnav .search-container {
