@@ -114,11 +114,10 @@ for (var i = 0; i < generos_array.length; i++) {
 console.log("Error: " + error);
 })
 
-<<<<<<< HEAD
-  var urlEstrenos = "https://api.themoviedb.org/3/movie/now_playing?api_key=7beff09c9fd5a79010c5ce4883840da9&language=en-US&page=1"
-=======
+
+
   var urlEstrenos = "https://api.themoviedb.org/3/movie/now_playing?api_key=ebcc7d54892cbf6b9dd7c194bd052f2f&page=1"
->>>>>>> master
+
  var urlConstante = "https://image.tmdb.org/t/p/original/"
 fetch(urlEstrenos)
   .then(function(response) {
@@ -234,7 +233,7 @@ fetch(urlEstrenos)
 
           var arrayDeEstrenos= data.results
           var li
-          for (var i = 0; i < arrayDeEstrenos.length; i++) {
+          for (var i = 4; i < arrayDeEstrenos.length; i++) {
             console.log(arrayDeEstrenos);
             var id = data.results[i].id
             var titulo = data.results[i].title
