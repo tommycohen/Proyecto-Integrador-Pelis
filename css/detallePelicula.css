@@ -1,0 +1,12 @@
+h2.nombre{
+font-size: 2rem;
+background-color: #68f2cc;
+color: white;
+width: 50%;
+margin: 0 auto;
+border-radius: 20px;
+border-style: double;
+border-color: black;
+text-align: center;
+top: 5%;
+}

@@ -291,7 +291,7 @@ img.estrenos-imagenes{
   height: 61vh;
 }
 
-.carrusel{
+/* .carrusel{
   margin-top: 150px;
   margin-right: %;
   margin-left: %;
@@ -317,10 +317,7 @@ img.estrenos-imagenes{
 
 .h3_carousel:hover{
   color: black;
-}
-
-
-
+} */
 
 button {
   background-color: #4CAF50;
