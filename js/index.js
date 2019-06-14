@@ -106,7 +106,7 @@ for (var i = 0; i < generos_array.length; i++) {
 console.log("Error: " + error);
 })
 
-  var urlEstrenos = "https://api.themoviedb.org/3/movie/upcoming?api_key=ebcc7d54892cbf6b9dd7c194bd052f2f&page=1"
+  var urlEstrenos = "https://api.themoviedb.org/3/movie/now_playing?api_key=ebcc7d54892cbf6b9dd7c194bd052f2f&page=1"
  var urlConstante = "https://image.tmdb.org/t/p/original/"
 fetch(urlEstrenos)
   .then(function(response) {
