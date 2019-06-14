@@ -12,7 +12,7 @@ window.addEventListener("load", function(){
 
     var arrayDeEstrenos= data.results
     var li
-    for (var i = 0; i < arrayDeEstrenos.length; i++) {
+    for (var i = 4; i < arrayDeEstrenos.length; i++) {
       var id = data.results[i].id
       var titulo = data.results[i].title
       var imagen = data.results[i].poster_path
