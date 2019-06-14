@@ -10,13 +10,28 @@ fetch(urlEstrenos)
   console.log(data.results);
 
   var arrayDeEstrenos= data.results
-
+  var li
   for (var i = 0; i < arrayDeEstrenos.length; i++) {
     var id = data.results[i].id
     var titulo = data.results[i].title
     var imagen = data.results[i].poster_path
     console.log(titulo)
-    document.querySelector(".contenedor").innerHTML += "<article class='peliculas'><img class='estrenos-imagenes' src='https://image.tmdb.org/t/p/original" + imagen + "' alt='img producto'><h2 class='titulo-producto'><a href=detallePelicula.html?id=" + id +  ">" + titulo + "</a></h2></article>"
+    li = "<article class='peliculas'>"
+    li+= "<a href=detallePelicula.html?id="
+    li += id
+    li +=">"
+    li+= "<img class='estrenos-imagenes' src='https://image.tmdb.org/t/p/original"
+    li += imagen
+    li +="' alt='img producto'>"
+
+    li += "<h2 class='titulo-producto'>"
+    li += "<a href=detallePelicula.html?id="
+    li += id
+    li +=">"
+    li +=titulo
+    li +="</a></h2></article>"
+    // document.querySelector(".contenedor").innerHTML += "<article class='peliculas'><img class='estrenos-imagenes' src='https://image.tmdb.org/t/p/original" + imagen + "' alt='img producto'><h2 class='titulo-producto'><a href=detallePelicula.html?id=" + id +  ">" + titulo + "</a></h2></article>"
+    document.querySelector(".contenedor").innerHTML += li
   }
 })
 
