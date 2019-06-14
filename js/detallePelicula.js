@@ -1,5 +1,4 @@
 window.addEventListener("load", function(){
-
   var queryString = new URLSearchParams(location.search);
   var detalles = queryString.get('id');
 
@@ -9,20 +8,19 @@ fetch(detallePelicula)
 .then(function(response) {
   return response.json();
 })
-.then(function(data) {
-  console.log(data.results);
 
-  var resultadoPelicula = informacion.results
+.then(function(informacion) {
+  console.log(informacion);
+  document.querySelector(".titulo").innerHTML = informacion.title
+  document.querySelector(".poster").innerHTML = "<img class='generos-imagenes' src='https://image.tmdb.org/t/p/original" + informacion.poster_path + "' alt='img producto'>"
+  document.querySelector(".sinopsis").innerHTML = "Sinopsis:" + " " + informacion.overview
+  document.querySelector(".lenguaje").innerHTML = "Lenguaje original:" + " " + informacion.original_language
+  document.querySelector(".generos").innerHTML = informacion.genres.name
+  document.querySelector(".estreno").innerHTML = "Fecha de estreno:" + " " + informacion.release_date
 
-    for (var i = 0; i < resultadoPelicula.length; i++) {
-      var id = informacion.results[i].id
-      var titulo = informacion.results[i].title
-      var imagen = informacion.results[i].poster_path
 
-      }
-      console.log(titulo)
-      document.querySelector(".contenedor_busqueda").innerHTML += "<article class='peliculas'><img class='estrenos-imagenes' src='" + imagen + "' alt='img producto'><h2 class='titulo-producto'><a href=detallePelicula.html?id=" + id +  ">" + titulo + "</a></h2></article>"
-    }
+      //document.querySelector(".contenedor_busqueda").innerHTML += "<article class='peliculas'><img class='estrenos-imagenes' src='" + imagen + "' alt='img producto'><h2 class='titulo-producto'><a href=detallePelicula.html?id=" + id +  ">" + titulo + "</a></h2></article>"
+    })
 
 .catch(function(error) {
 console.log('Hubo un problema con la petición Fetch:' + error.message);

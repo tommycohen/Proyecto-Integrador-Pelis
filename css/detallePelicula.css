@@ -8,7 +8,15 @@ border-radius: 20px;
 border-style: double;
 border-color: black;
 text-align: center;
-top: 5%;
+top: 10%;
+}
+ul.info{
+  text-align: center;
+  list-style-type: none;
+  color: rgb(104,242,204);
+}
+li.titulo {
+  font-size: 1.5rem;
 }
 
 button.dropbtn {
@@ -35,4 +43,8 @@ button.w3-button.w3-black {
     padding-left: 12px;
     padding-bottom: 6px;
     background-color: gainsboro;
+}
+img.generos-imagenes{
+  align-items: center;
+  width: 30%;
 }
