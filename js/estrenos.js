@@ -1,6 +1,6 @@
 window.addEventListener("load", function(){
 
-  var urlEstrenos = "https://api.themoviedb.org/3/movie/upcoming?api_key=ebcc7d54892cbf6b9dd7c194bd052f2f&page=1"
+  var urlEstrenos = "https://api.themoviedb.org/3/movie/now_playing?api_key=ebcc7d54892cbf6b9dd7c194bd052f2f&page=1"
 
 fetch(urlEstrenos)
 .then(function(response) {
