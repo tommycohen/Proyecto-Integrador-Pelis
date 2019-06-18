@@ -17,7 +17,10 @@ fetch(detallePelicula)
   document.querySelector(".poster").innerHTML = "<img class='generos-imagenes' src='https://image.tmdb.org/t/p/original" + informacion.poster_path + "' alt='img producto'>"
   document.querySelector(".sinopsis").innerHTML = "Sinopsis:" + " " + informacion.overview
   document.querySelector(".lenguaje").innerHTML = "Lenguaje original:" + " " + informacion.original_language
-  document.querySelector(".generos").innerHTML = informacion.genres.name
+  var generos = informacion.genres.map(function(genero){
+    return '<a href = "generos.html?id='+ genero.id + '">'+ genero.name + '</a>'
+  })
+  document.querySelector(".generos").innerHTML = generos.join(" - ")
   document.querySelector(".estreno").innerHTML = "Fecha de estreno:" + " " + informacion.release_date
 
   fetch("https://api.themoviedb.org/3/movie/" + detalles + "/videos?api_key=ebcc7d54892cbf6b9dd7c194bd052f2f")
