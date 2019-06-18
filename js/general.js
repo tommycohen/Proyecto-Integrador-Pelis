@@ -1,5 +1,6 @@
 window.addEventListener("load",function(){
 
+console.log(localStorage);
   if (localStorage.getItem("usuario")!= null){
     document.querySelector("#login").style.display = "none"
     document.querySelector(".preferidas").style.display = "block"
@@ -48,7 +49,7 @@ window.addEventListener("load",function(){
     }
   }
 
-document.querySelector(".boton_logOut").onclick = localStorage.clear()
+document.querySelector(".boton_logOut").onclick = function() { localStorage.clear() }
 
 
 

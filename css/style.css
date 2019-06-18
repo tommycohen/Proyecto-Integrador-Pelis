@@ -956,16 +956,22 @@ right: 16px;
 a.preferidas:hover{
   color: #000!important;
 }
-
-.boton_logOut{
-  width: 103PX;
-position: relative;
-right: -161px;
-bottom: 43px;
-background-color: rgb(104, 242, 204);
+.boton_logOut:hover{
+  color: #000!important;
 }
 
-.boton_logOut:hover{
+.boton_logOut{
+  width: 103px;
+      padding: 1px;
+      height: 50px;
+      position: relative;
+      text-align: center;
+      right: -161px;
+      bottom: -13px;
+      background-color: rgb(104, 242, 204);
+}
+
+p.boton_log_out{
   color: #000!important;
 }
 
