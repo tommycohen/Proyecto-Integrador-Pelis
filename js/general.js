@@ -27,6 +27,11 @@ window.addEventListener("load",function(){
   } else{
     e.preventDefault()
     localStorage.setItem('usuario', nombre.value)
+    document.querySelector("#login").style.display = "none"
+    document.querySelector(".preferidas").style.display = "block"
+    var usuario = document.querySelector(".nombre")
+    usuario.innerHTML = "<p>Hola, "+localStorage.getItem("usuario")+"</p>"
+    console.log(localStorage.getItem("usuario"));
     document.querySelector('#login').style.display = "none"
     document.querySelector('.preferidas').style.display = "block"
     document.querySelector('.boton_cancelar').click()
