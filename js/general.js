@@ -43,6 +43,7 @@ window.addEventListener("load",function(){
     }
   }
 
+document.querySelector(".boton_logOut").onclick = localStorage.clear()
 
 
 
