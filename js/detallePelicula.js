@@ -39,3 +39,25 @@ console.log('Hubo un problema con la petición Fetch:' + error.message);
 });
 
 })
+
+function marcarComoFavorito() {
+  var queryString = new URLSearchParams(location.search);
+  var idPelicula = queryString.get('id');
+console.log(idPelicula)
+  var listaDeFavoritos = localStorage.getItem("favoritos")
+
+        if (listaDeFavoritos) {
+            var listaDeFavoritosJS = JSON.parse(listaDeFavoritos)
+            var listaFiltrada = listaDeFavoritosJS.filter(function(elementoFavorito){
+              return elementoFavorito == idPelicula
+            })
+            if (listaFiltrada.length == 0) {
+              listaDeFavoritosJS.push (idPelicula)
+              localStorage.setItem ("favoritos", JSON.stringify (listaDeFavoritosJS))
+            }
+        }
+        else {
+          var nuevaListaFavorito = [idPelicula]
+            localStorage.setItem("favoritos", JSON.stringify (nuevaListaFavorito))
+          }
+}
