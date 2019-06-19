@@ -41,7 +41,7 @@ fetch(detallePelicula)
 console.log('Hubo un problema con la petición Fetch:' + error.message);
 });
 
-})
+
 
 if (localStorage.getItem("usuario")== null) {
   document.querySelector(".button-fav").style.display = "none"
@@ -51,10 +51,59 @@ if (localStorage.getItem("usuario")== null) {
 
 
 
+
+
+
+
+
+
+var recomendacionPelicula = "https://api.themoviedb.org/3/movie/"+detalles+"/recommendations?api_key=ebcc7d54892cbf6b9dd7c194bd052f2f&page=1"
+// "https://api.themoviedb.org/3/movie/"+detalles+"/recommendations?api_key=​ebcc7d54892cbf6b9dd7c194bd052f2f​&page=1"
+
+fetch(recomendacionPelicula)
+.then(function(response) {
+  return response.json();
+})
+.then(function(data) {
+  console.log(data);
+
+  var arrayDeRecomendacion= data.results
+  var li
+  for (var i = 0; i < 6; i++) {
+    var id = data.results[i].id
+    var titulo = data.results[i].title
+    var imagen = data.results[i].poster_path
+    console.log(titulo)
+    li = "<article class='peliculas'>"
+    li+= "<a href=detallePelicula.html?id="
+    li += id
+    li +=">"
+    li+= "<img class='estrenos-imagenes' src='https://image.tmdb.org/t/p/original"
+    li += imagen
+    li +="' alt='img producto'>"
+
+    li += "<h2 class='titulo-producto'>"
+    li += "<a href=detallePelicula.html?id="
+    li += id
+    li +=">"
+    li +=titulo
+    li +="</a></h2></article>"
+    // document.querySelector(".contenedor").innerHTML += "<article class='peliculas'><img class='estrenos-imagenes' src='https://image.tmdb.org/t/p/original" + imagen + "' alt='img producto'><h2 class='titulo-producto'><a href=detallePelicula.html?id=" + id +  ">" + titulo + "</a></h2></article>"
+    document.querySelector(".contenedor").innerHTML += li
+  }
+
+})
+
+
+
+})
+function recomendaciones(){
+  document.querySelector("div.contenedor").style.display= "block"
+}
 function marcarComoFavorito() {
   var queryString = new URLSearchParams(location.search);
   var idPelicula = queryString.get('id');
-console.log(idPelicula)
+  console.log(idPelicula)
   var listaDeFavoritos = localStorage.getItem("favoritos")
 
         if (listaDeFavoritos) {
