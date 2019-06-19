@@ -4,6 +4,9 @@ console.log(localStorage);
   if (localStorage.getItem("usuario")!= null){
     document.querySelector("#login").style.display = "none"
     document.querySelector(".preferidas").style.display = "block"
+    document.querySelector(".boton_logOut").style.display = "block"
+    document.querySelector(".boton_deHome2").style.display = "block"
+    document.querySelector(".boton_deHome").style.display = "none"
     var usuario = document.querySelector(".nombre")
     usuario.innerHTML = "<p>Hola, "+localStorage.getItem("usuario")+"</p>"
     console.log(localStorage.getItem("usuario"));
@@ -18,34 +21,64 @@ console.log(localStorage);
     e.preventDefault()
     if (nombre.value == "" && email.value.match(mailformat)== null){
       e.preventDefault()
-      alert('complete todos los campos')
+      UIkit.notification({
+       message: 'Por favor, complete todos los campos.',
+       status: 'warning',
+       pos: 'top-center',
+       timeout: 1500,
+     })
     }else if(nombre.value == ""){
       e.preventDefault()
-      alert('Falta su nombre')
+      UIkit.notification({
+       message: 'Por favor, ingrese su nombre.',
+       status: 'warning',
+       pos: 'top-center',
+       timeout: 3000,
+     })
     }else if (email.value.match(mailformat)== null){
     e.preventDefault()
-    alert('Falta su email')
+    UIkit.notification({
+     message: 'Por favor, ingrese su email.',
+     status: 'warning',
+     pos: 'top-center',
+     timeout: 3000,
+   })
   } else{
     e.preventDefault()
     localStorage.setItem('usuario', nombre.value)
     document.querySelector("#login").style.display = "none"
     document.querySelector(".preferidas").style.display = "block"
+    document.querySelector(".boton_logOut").style.display = "block"
+    document.querySelector(".boton_deHome2").style.display = "block"
+    document.querySelector(".boton_deHome").style.display = "none"
     var usuario = document.querySelector(".nombre")
     usuario.innerHTML = "<p>Hola, "+localStorage.getItem("usuario")+"</p>"
     console.log(localStorage.getItem("usuario"));
     document.querySelector('#login').style.display = "none"
     document.querySelector('.preferidas').style.display = "block"
+    document.querySelector(".boton_logOut").style.display = "block"
+    document.querySelector(".boton_deHome2").style.display = "block"
+    document.querySelector(".boton_deHome").style.display = "none"
     document.querySelector('.boton_cancelar').click()
   }
 }
 
+if (localStorage.getItem("usuario")== null) {
+  document.querySelector(".boton_logOut").style.display = "none"
+  document.querySelector(".boton_deHome2").style.display = "none"
+}
 
 
 
   document.querySelector("form.busqueda").onsubmit = function(e) {
     if (document.querySelector(".texto-busqueda").value.length <= 3) {
       e.preventDefault()
-      alert("Error")
+        UIkit.notification({
+         message: 'Por favor, ingrese minimo 3 caracteres.',
+         status: 'warning',
+         pos: 'top-center',
+         timeout: 3000,
+       })
     }
   }
 
