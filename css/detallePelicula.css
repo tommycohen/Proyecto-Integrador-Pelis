@@ -1,3 +1,7 @@
+*{
+    font-family: monaco;
+    box-sizing: border-box;
+}
 h2.nombre{
 font-size: 2rem;
 background-color: #68f2cc;
@@ -23,12 +27,12 @@ button.dropbtn {
     background: rgb(104, 242, 204);
     padding-top: 23px;
     position: relative;
-    left: -32px;
-    bottom: -10px;
+    left: -8px;
+    bottom: -2px;
 }
 button.w3-button.w3-black {
     position: relative;
-    bottom: -26px;
+    bottom: -19px;
     left: -23px;
     background-color: rgb(104,242,204)!important;
 }
@@ -99,6 +103,24 @@ li.sinopsis{
   border: white;
   border-style: solid;
   margin-left: 26.3%;
+}
+
+a.boton_deHome {
+    position: relative;
+    bottom: -14px;
+    left: 37px;
+}
+
+.button_buscador {
+    width: 20%;
+    position: relative;
+    top: -5px;
+    left: 256px;
+    height: -1px;
+    padding-top: 0px;
+    padding-left: 12px;
+    padding-bottom: 6px;
+    background-color: gainsboro;
 }
 
 @media screen and (max-width: 600px) {
