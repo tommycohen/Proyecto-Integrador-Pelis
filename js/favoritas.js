@@ -30,13 +30,23 @@ for (var i = 0; i < listaDeFavoritos.length; i++) {
       li+=id
       li+=">"
       li+=titulo
-      li+="</a></h2></article>"
+      li+="</a></h2>"
+      li+= '<button onclick= "sacarFavorito('+id+')"> Sacar de favoritas </button> </article>'
 
       // document.querySelector(".contenedor").innerHTML += "<article class='peliculasGeneros'><img class='generos-imagenes' src='https://image.tmdb.org/t/p/original" + imagen + "' alt='img producto'><h2 class='titulo-producto'><a href=detallePelicula.html?id=" + id +  ">" + titulo + "</a></h2></article>"
       document.querySelector(".contenedor").innerHTML += li
+
   // }
     }
   })
 }
 }
 mostrarPeliculasFavoritas()
+function sacarFavorito(id){
+  var listaActualFavoritos = JSON.parse (localStorage.getItem("favoritos"))
+  var nuevaListaDeFavoritos = listaActualFavoritos.filter (function(favorito){
+    return favorito != id
+  })
+  localStorage.setItem("favoritos", JSON.stringify(nuevaListaDeFavoritos))
+  location.href = "favoritas.html"
+}
