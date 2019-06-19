@@ -1,12 +1,17 @@
 window.addEventListener("load", function(){
 //app y appold.js//
 
-  document.querySelector("form.busqueda").onsubmit = function(e) {
-    if (document.querySelector(".texto-busqueda").value.length <= 3) {
-      e.preventDefault()
-      alert("Error")
-    }
+document.querySelector("form.busqueda").onsubmit = function(e) {
+  if (document.querySelector(".texto-busqueda").value.length <= 3) {
+    e.preventDefault()
+      UIkit.notification({
+       message: 'Por favor, ingrese minimo 3 caracteres.',
+       status: 'warning',
+       pos: 'top-center',
+       timeout: 3000,
+     })
   }
+}
 
   window.onclick = function(e) {
     var myDropdown = document.getElementById("myDropdown");

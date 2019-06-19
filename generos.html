@@ -12,6 +12,12 @@
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/js/uikit-icons.min.js"></script>
     <link rel="stylesheet" href="css/generos.css">
     <link rel="stylesheet" href="css/style.css">
 
@@ -35,22 +41,26 @@
 
               </div>
             </li>
-            <li class="li-menu"><a class="item"href="index.html">HOME</a></li>
+            <li class="li-menu"><a class="boton_deHome"href="index.html">HOME</a></li>
+            <li class="li-menu"><a class="boton_deHome2"href="index.html">HOME</a></li>
+            <li class="nombre"></li>
             <li class="w3-container">
-              <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">LOG IN</button>
+              <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black " id="login">LOG IN</button>
+              <button type="button" name="button" class="boton_logOut"> <p class="boton_log_out">LOG OUT</p></button>
+              <a href="peliculasPreferidas" class="preferidas">Peliculas favoritas</a>
               <div id="id01" class="w3-modal w3-animate-opacity">
                 <div class="w3-modal-content w3-card-4">
                   <div class="wrapper">
-                    <form action="index.html" method="GET">
+                    <form action="index.html" method="GET" class="formularioDeLogIn">
                         <p class="title">Log in</p>
-                        <input type="text" placeholder="Username" autofocus/>
+                        <input type="text" name="nombre" placeholder="Name" autofocus/>
                         <i class="fa fa-user"></i>
-                        <input type="password" placeholder="Password" />
+                        <input type="email" name="email" placeholder="Email" />
                         <i class="fa fa-key"></i>
-                        <a href="#">Forgot your password?</a>
-                        <button>
-                          Log in
+                        <button type="submit">
+                          INGRESAR
                         </button>
+                        <button class="boton_cancelar" type="reset" onclick="document.getElementById('id01').style.display='none'">CANCELAR</button>
                     </form>
                     </p>
                   </div>
@@ -59,7 +69,7 @@
             </li>
             <li class="topnav">
               <form action="buscador.html" method="get" class="busqueda">
-                <input type="text" placeholder="Search.." name="buscador">
+                <input type="text" placeholder="Search.." name="buscador" class="texto-busqueda">
                 <button type="submit" class="button_buscador"><i class="fa fa-search"></i></button>
               </form>
             </li>

@@ -320,6 +320,7 @@ ul.ul-menu{
   padding: 0px 16px;
   text-decoration: none;
   display: block;
+  margin: -2px;
 }
 
 .dropdown a:hover {background-color: #ddd;}
@@ -853,21 +854,23 @@ form.busqueda input{
     left: 65px;
 }
 
-a.item{
+a.boton_deHome{
   position: relative;
-  bottom: -4px;
+  bottom: -13px;
+  left: -15px;
 }
 
-a.item:hover{
+a.boton_deHome:hover{
   color: #000!important;
   color: black;
+  text-decoration: none;
 }
 
 button.w3-button.w3-black{
   position: relative;
-bottom: -18px;
-left: -23px;
-background-color: rgb(104,242,204)!important
+    bottom: -18px;
+    left: -93px;
+    background-color: rgb(104,242,204)!important;
 }
 
 .button_buscador{
@@ -951,13 +954,14 @@ a.preferidas{
   position: relative;
 bottom: 34px;
 right: 16px;
+width: 112%;
 }
 
 a.preferidas:hover{
   color: #000!important;
 }
 .boton_logOut:hover{
-  color: #000!important;
+  opacity: 0.8;
 }
 
 .boton_logOut{
@@ -967,11 +971,46 @@ a.preferidas:hover{
       position: relative;
       text-align: center;
       right: -161px;
-      bottom: -13px;
+      bottom: -10px;
       background-color: rgb(104, 242, 204);
+
 }
 
 p.boton_log_out{
+  position: relative;
+  bottom: -12px;
+}
+
+p.boton_log_out:hover{
+  color: #000!important;
+}
+a.preferidas:hover{
+  text-decoration: none;
+}
+
+.nombresDelFooter{
+  color: white;
+  text-align: center;
+}
+
+a.next:hover{
+  color: rgba(0,0,0,0.2);
+  text-decoration: none;
+}
+
+a.prev:hover{
+  color: rgba(0,0,0,0.8);
+  text-decoration: none;
+}
+
+li.nombre p{
+  position: relative;
+bottom: -14px;
+width: 109%;
+}
+
+a.boton_deHome2:hover{
+  text-decoration: none;
   color: #000!important;
 }
 
@@ -1044,10 +1083,10 @@ p.boton_log_out{
   }
 
   button.w3-button.w3-black {
-      position: relative;
-      bottom: 22px;
-      left: 184px;
-      background-color: rgb(104,242,204)!important;
+    position: relative;
+  bottom: -18px;
+  left: -93px;
+  background-color: rgb(104,242,204)!important;
   }
 
   .tmdb-logo{
