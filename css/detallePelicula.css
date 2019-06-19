@@ -76,6 +76,22 @@ li.sinopsis{
 
 }
 
+.button-fav{
+  background-color: violet;
+      color: black;
+      padding: 14px 20px;
+      margin: 8px 0
+      border: none;
+      cursor: pointer;
+      width: 14%;
+      margin: 0 auto;
+      position: absolute;
+      left: 44.3%;
+      top: 183%;
+      border-radius: 20px;
+}
+
+
 #trailer{
   width: 50%;
   text-align: center;
