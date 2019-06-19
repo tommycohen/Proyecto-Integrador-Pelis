@@ -18,3 +18,24 @@ h2.subtitulo{
   text-align: center;
   margin-top: 3%;
 }
+@media screen and (max-width: 600px) {
+
+
+a.item{
+  position: relative;
+    bottom: 22px;
+    left: 205px;
+}
+button.dropbtn {
+    position: relative;
+    bottom: 40px;
+    left: 212px;
+}
+
+button.w3-button.w3-black {
+    position: relative;
+    bottom: 22px;
+    left: 184px;
+    background-color: rgb(104,242,204)!important;
+}
+}

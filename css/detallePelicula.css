@@ -84,3 +84,36 @@ li.sinopsis{
   border-style: solid;
   margin-left: 26.3%;
 }
+
+@media screen and (max-width: 600px) {
+  a.item{
+    position: relative;
+      bottom: 22px;
+      left: 205px;
+  }
+  button.dropbtn {
+      position: relative;
+      bottom: 22px;
+      left: 212px;
+  }
+
+  button.w3-button.w3-black {
+      position: relative;
+      bottom: 22px;
+      left: 184px;
+      background-color: rgb(104,242,204)!important;
+  }
+
+  .tmdb-logo{
+    display: none;
+  }
+
+  form.busqueda{
+    display: none;
+  }
+
+  h2.nombre{
+    border-color: #6df3cc;
+    background-color: black;
+  }
+}

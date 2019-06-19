@@ -1007,4 +1007,74 @@ p.boton_log_out{
   position: relative;
   left: -32px;
   }
+
+  .tmdb-logo{
+    display: none;
+  }
+
+  form.busqueda{
+    display: none;
+  }
+
+  .peliculasGeneros {
+    float: left;
+    width: 45%;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    margin-right: 10%;
+    background-color:#61F3CC;
+    height: 500px;
+  }
+  .peliculasGeneros:nth-child(3n){
+    margin-right: 10%;
+  }
+  .peliculasGeneros:nth-child(2n){
+    margin-right: 0;
+  }
+
+  a.item{
+    position: relative;
+      bottom: 22px;
+      left: 205px;
+  }
+  button.dropbtn {
+      position: relative;
+      bottom: 22px;
+      left: 212px;
+  }
+
+  button.w3-button.w3-black {
+      position: relative;
+      bottom: 22px;
+      left: 184px;
+      background-color: rgb(104,242,204)!important;
+  }
+
+  .tmdb-logo{
+    display: none;
+  }
+
+  form.busqueda{
+    display: none;
+  }
+
+  .dropdown-content{
+    margin-left: 18%;
+  }
+
+  .car{
+    position: relative;
+    float: left;
+    width: 80%;
+    margin-right:10%;
+    margin-left: 10%;
+    margin-top:4%;
+  }
+  .car:nth-child(2n){
+    margin-right: 10%;
+  }
+
+  #estrenos-carousel{
+    background-color: black;
+  }
 }
