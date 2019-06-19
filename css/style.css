@@ -30,7 +30,8 @@
   width: 85%;
 border-radius: 20%;
 height: 62vh;
-
+border: #61F3CC;
+border-style: solid;
 }
 
 
