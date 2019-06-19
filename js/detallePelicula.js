@@ -43,6 +43,14 @@ console.log('Hubo un problema con la petición Fetch:' + error.message);
 
 })
 
+if (localStorage.getItem("usuario")== null) {
+  document.querySelector(".button-fav").style.display = "none"
+}else {
+  document.querySelector(".button-fav").style.display = "block"
+}
+
+
+
 function marcarComoFavorito() {
   var queryString = new URLSearchParams(location.search);
   var idPelicula = queryString.get('id');
