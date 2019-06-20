@@ -83,7 +83,7 @@ if (localStorage.getItem("usuario")== null) {
   }
 
 document.querySelector(".boton_logOut").onclick = function() {
-localStorage.removeItem ("usuario")
+localStorage.clear ()
 location.href = "index.html"
 }
 
