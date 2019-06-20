@@ -1037,6 +1037,46 @@ a.boton_deHome2:hover{
   border-radius: 20px;
 }
 
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+  
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 51px;
+  height: 51px;
+  margin: 6px;
+  border: 6px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
 
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
@@ -1102,16 +1142,44 @@ a.boton_deHome2:hover{
   }
   button.dropbtn {
       position: relative;
-      bottom: 22px;
-      left: 212px;
+      bottom: 41px;
+      left: 350px;
   }
 
-  button.w3-button.w3-black {
+  a.boton_deHome {
     position: relative;
-  bottom: -18px;
-  left: -93px;
-  background-color: rgb(104,242,204)!important;
+    bottom: 23px;
+    left: 333px;
+    z-index: 1;
   }
+
+
+
+  .boton_logOut{
+    right: -353px;
+    bottom: 32px;
+  }
+
+  .boton_deHome2{
+    display: none;
+  }
+
+  li.nombre{
+    right: -173px;
+    bottom: 23px;
+  }
+
+  a.preferidas{
+    bottom: 76px;
+    right: -178px;
+  }
+
+  button.w3-button.w3-black{
+    position: relative;
+    bottom: 19px;
+    left: 275px;
+  background-color: rgb(104,242,204)!important;
+}
 
   .tmdb-logo{
     display: none;
@@ -1122,7 +1190,7 @@ a.boton_deHome2:hover{
   }
 
   .dropdown-content{
-    margin-left: 18%;
+    margin-left: 52%;
   }
 
   .car{

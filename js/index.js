@@ -1,4 +1,6 @@
 window.addEventListener("load", function(){
+
+
 //app y appold.js//
 
 document.querySelector("form.busqueda").onsubmit = function(e) {

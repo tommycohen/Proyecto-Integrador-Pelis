@@ -1,4 +1,14 @@
 window.addEventListener("load",function(){
+  document.querySelector(".lds-ring").style.display="block"
+  document.querySelector(".contenedorDeTodo").style.display="none"
+
+  setTimeout(function(){
+    document.querySelector(".lds-ring").style.display="none"
+    document.querySelector(".contenedorDeTodo").style.display="block"
+  }, 1500);
+
+
+
 
 console.log(localStorage);
   if (localStorage.getItem("usuario")!= null){
