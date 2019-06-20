@@ -90,11 +90,18 @@ li.sinopsis{
       border-radius: 20px;
 }
 
+a.button-fav:hover{
+  opacity: 0,5;
+}
+
 .button-favorito{
   width: 57%;
   border-radius: 50%;
 }
-
+a:active, a:hover{
+  outline: 0;
+  opacity: 0.5;
+}
 
 #trailer{
   width: 50%;
