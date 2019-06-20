@@ -70,11 +70,7 @@ img.estrenos-imagenes{
       bottom: 22px;
       left: 205px;
   }
-  button.dropbtn {
-      position: relative;
-      bottom: 40px;
-      left: 212px;
-  }
+
 
   button.w3-button.w3-black {
       position: relative;
@@ -82,4 +78,45 @@ img.estrenos-imagenes{
       left: 184px;
       background-color: rgb(104,242,204)!important;
   }
+
+    
+
+    .tmdb-logo{
+      display: none;
+    }
+
+    form.busqueda{
+      display: none;
+    }
+
+    a.boton_deHome {
+        position: relative;
+        bottom: 41px;
+        left: 565px;
+        z-index: 1;
+    }
+    button.w3-button.w3-black {
+        position: relative;
+        bottom: 22px;
+        left: 458px;
+        background-color: rgb(104,242,204)!important;
+    }
+    p.boton_log_out {
+        position: relative;
+        bottom: -12px;
+        right: -40px;
+    }
+    a.preferidas {
+        bottom: 76px;
+        right: -219px;
+    }
+
+    a.boton_deHome {
+        display: block!important;
+        position: relative;
+        bottom: 43px;
+        left: 308px;
+        z-index: 1;
+
+    }
   }

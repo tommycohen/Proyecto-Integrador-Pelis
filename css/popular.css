@@ -106,11 +106,7 @@ img.estrenos-imagenes{
   form.busqueda{
     display: none;
   }
-  button.dropbtn {
-      position: relative;
-      bottom: 26px;
-      left: 492px;
-  }
+  
   a.boton_deHome {
       position: relative;
       bottom: 41px;
