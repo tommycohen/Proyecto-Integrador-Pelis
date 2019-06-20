@@ -1215,6 +1215,20 @@ li.nombre p {
     left: -156px;
 
 }
+
+button.dropbtn {
+    position: relative;
+    bottom: 42px;
+    left: 441px;
+}
+a.boton_deHome {
+    display: block!important;
+    position: relative;
+    bottom: 41px;
+    left: 291px;
+    z-index: 1;
+}
+}
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) and (max-width: 800px){
 

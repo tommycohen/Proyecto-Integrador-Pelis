@@ -447,9 +447,8 @@ form.busqueda{
 }
 button.dropbtn {
     position: relative;
-    bottom: 36px;
-    left: 537px;
-    top: -24px;
+    bottom: 26px;
+    left: 492px;
 }
 a.boton_deHome {
     position: relative;
@@ -462,6 +461,24 @@ button.w3-button.w3-black {
     bottom: 22px;
     left: 458px;
     background-color: rgb(104,242,204)!important;
+}
+p.boton_log_out {
+    position: relative;
+    bottom: -12px;
+    right: -40px;
+}
+a.preferidas {
+    bottom: 76px;
+    right: -219px;
+}
+
+a.boton_deHome {
+    display: block!important;
+    position: relative;
+    bottom: 43px;
+    left: 308px;
+    z-index: 1;
+
 }
 
 }
