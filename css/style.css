@@ -248,9 +248,8 @@ div.search-container {
 }
 
 header form.busqueda {
-  /* position: relative;
-  bottom: 5px;
-left: 857px; */
+top:33px;
+left: 667px;
 }
 header form.login {
   position: relative;
@@ -851,7 +850,6 @@ form.busqueda{
   position: absolute;
 }
 form.busqueda input{
-  position: relative;
     bottom: -31px;
     left: 65px;
 }
@@ -878,8 +876,8 @@ button.w3-button.w3-black{
 .button_buscador{
   width: 20%;
 position: relative;
-top: -5px;
-left: 256px;
+top: -36px;
+left: 162px;
 height: -1px;
 padding-top: 0px;
 padding-left: 12px;
@@ -1014,6 +1012,14 @@ width: 109%;
 a.boton_deHome2:hover{
   text-decoration: none;
   color: #000!important;
+}
+
+.boton_logOut:hover{
+  opacity: 1!important;
+}
+
+.div_contenedor_nav{
+  position: absolute;
 }
 
 /* Change styles for span and cancel button on extra small screens */

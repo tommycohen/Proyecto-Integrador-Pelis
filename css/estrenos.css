@@ -371,14 +371,15 @@ form.busqueda{
 }
 form.busqueda input {
     position: relative;
-    bottom: -31px;
-    left: 65px;}
+    bottom: 1px;
+    left: 11px;
+  }
 
     .button_buscador{
       width: 20%;
     position: relative;
-    top: -5px;
-    left: 256px;
+    top: -37px;
+    left: 167px;
     height: -1px;
     padding-top: 0px;
     padding-left: 12px;
