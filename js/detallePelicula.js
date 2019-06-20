@@ -1,5 +1,13 @@
 window.addEventListener("load", function(){
+  document.querySelector(".lds-ring").style.display="block"
+  document.querySelector(".contenedorDeTodo").style.display="none"
+  document.querySelector("#header").style.display="none"
 
+  setTimeout(function(){
+    document.querySelector(".lds-ring").style.display="none"
+    document.querySelector(".contenedorDeTodo").style.display="block"
+    document.querySelector("#header").style.display="block"
+  }, 1500);
 
   var queryString = new URLSearchParams(location.search);
   var detalles = queryString.get('id');
