@@ -60,6 +60,7 @@ console.log(localStorage);
     document.querySelector(".boton_deHome2").style.display = "block"
     document.querySelector(".boton_deHome").style.display = "none"
     document.querySelector('.boton_cancelar').click()
+    location.reload();
   }
 }
 
@@ -84,8 +85,9 @@ if (localStorage.getItem("usuario")== null) {
 
 document.querySelector(".boton_logOut").onclick = function() {
 localStorage.clear ()
-location.href = "index.html"
+  location.reload();
 }
+
 
 
 

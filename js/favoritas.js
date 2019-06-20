@@ -1,5 +1,12 @@
 function mostrarPeliculasFavoritas(){
 var listaDeFavoritos = JSON.parse (localStorage.getItem("favoritos"))
+
+if (listaDeFavoritos == 0) {
+  document.querySelector(".sin-peliculas").innerHTML="<h2>No tiene ninguna pelicula favorita</h2>"
+}else {
+
+document.querySelector(".sin-peliculas").style.display="none"
+
 for (var i = 0; i < listaDeFavoritos.length; i++) {
   var elementoFavorito = listaDeFavoritos[i]
   var URL = "https://api.themoviedb.org/3/movie/"+ elementoFavorito +"?api_key=ebcc7d54892cbf6b9dd7c194bd052f2f&language=en-US"
@@ -39,6 +46,7 @@ for (var i = 0; i < listaDeFavoritos.length; i++) {
   // }
     }
   })
+}
 }
 }
 mostrarPeliculasFavoritas()
