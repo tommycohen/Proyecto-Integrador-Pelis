@@ -1077,21 +1077,8 @@ a.boton_deHome2:hover{
 }
 
 
-
-
-
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-  span.psw {
-     display: block;
-     float: none;
-  }
-  .cancelbtn {
-     width: 100%;
-  }
-}
-
-@media screen and (max-width: 600px) {
+/* dispositivos mobile */
+@media only screen and (max-width: 600px) {
   .topnav .search-container {
     float: none;
   }
@@ -1143,19 +1130,17 @@ a.boton_deHome2:hover{
       left: 205px;
   }
   button.dropbtn {
-      position: relative;
-      bottom: 41px;
-      left: 350px;
+  position: relative;
+  bottom: 37px;
+  left: 441px;
   }
 
   a.boton_deHome {
     position: relative;
-    bottom: 23px;
-    left: 333px;
+    bottom: 38px;
+    left: 565px;
     z-index: 1;
   }
-
-
 
   .boton_logOut{
     right: -353px;
@@ -1178,8 +1163,8 @@ a.boton_deHome2:hover{
 
   button.w3-button.w3-black{
     position: relative;
-    bottom: 19px;
-    left: 275px;
+    bottom: 20px;
+    left: 466px;
   background-color: rgb(104,242,204)!important;
 }
 
@@ -1191,9 +1176,7 @@ a.boton_deHome2:hover{
     display: none;
   }
 
-  .dropdown-content{
-    margin-left: 52%;
-  }
+
 
   .car{
     position: relative;
@@ -1210,4 +1193,43 @@ a.boton_deHome2:hover{
   #estrenos-carousel{
     background-color: black;
   }
+  .dropdown-content {
+      margin-left: 90%;
+      margin-top: -5%;
+  }
+  li.li-logo{
+    display: none;
+  }
+  nav ul.ul-menu {
+    float: right;
+    display: flex;
+    margin-top: 16px;
+    width: 598.84px;
+    height: 90.28px;
+}
+
+li.nombre p {
+    position: relative;
+    bottom: -16px;
+    width: 109%;
+    left: -156px;
+
+}
+
+button.dropbtn {
+    position: relative;
+    bottom: 42px;
+    left: 441px;
+}
+a.boton_deHome {
+    display: block!important;
+    position: relative;
+    bottom: 41px;
+    left: 291px;
+    z-index: 1;
+}
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 800px){
+
 }

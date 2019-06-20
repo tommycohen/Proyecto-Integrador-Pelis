@@ -1,7 +1,8 @@
 window.addEventListener("load", function(){
 
 var queryString = new URLSearchParams(location.search)
-var buscador = queryString.get("buscador")
+var buscador = queryString.get("buscador");
+
 
 fetch("https://api.themoviedb.org/3/search/movie?api_key=7beff09c9fd5a79010c5ce4883840da9&language=en-US&query=" + buscador + "&page=1&include_adult=false")
   .then(function(respuesta) {
