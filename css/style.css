@@ -73,6 +73,8 @@ nav ul.ul-menu {
   float: right;
   display: flex;
     margin-top: -26px;
+    width: 598.84px;
+height: 90.28px;
 
 }
 nav li.li-menu {
@@ -82,7 +84,7 @@ nav li.li-menu {
   font-weight: bold;
   margin-top: 7%;
   position: relative;
-    top: -17px;
+    top: -21px;
     width: 10%;
     height: 5vh;
 }
@@ -259,7 +261,7 @@ div.search-container {
 
 header form.busqueda {
 top:33px;
-left: 667px;
+left:653px;
 }
 header form.login {
   position: relative;
@@ -866,8 +868,8 @@ form.busqueda input{
 
 a.boton_deHome{
   position: relative;
-  bottom: -13px;
-  left: -15px;
+  bottom: 3px;
+  left: 5px;
 }
 
 a.boton_deHome:hover{
