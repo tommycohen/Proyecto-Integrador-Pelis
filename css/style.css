@@ -1026,6 +1026,18 @@ a.boton_deHome2:hover{
   color: #000!important;
 }
 
+.sin-peliculas{
+  background-color: red;
+  width: 37%;
+  text-align: center;
+
+  margin: 0 auto;
+  margin-bottom: 24%;
+  margin-top: 12%;
+  border-radius: 20px;
+}
+
+
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
   span.psw {
