@@ -1077,21 +1077,8 @@ a.boton_deHome2:hover{
 }
 
 
-
-
-
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-  span.psw {
-     display: block;
-     float: none;
-  }
-  .cancelbtn {
-     width: 100%;
-  }
-}
-
-@media screen and (max-width: 600px) {
+/* dispositivos mobile */
+@media only screen and (max-width: 340px) {
   .topnav .search-container {
     float: none;
   }
@@ -1155,8 +1142,6 @@ a.boton_deHome2:hover{
     z-index: 1;
   }
 
-
-
   .boton_logOut{
     right: -353px;
     bottom: 32px;
@@ -1210,4 +1195,8 @@ a.boton_deHome2:hover{
   #estrenos-carousel{
     background-color: black;
   }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 340px) and (max-width: 800px){
+
 }
