@@ -2,6 +2,10 @@
     font-family: monaco;
     box-sizing: border-box;
 }
+a:hover{
+  outline: 0;
+  opacity: 0.5;
+}
 
 #estrenos-carousel{
   color: white;
@@ -23,7 +27,13 @@
   text-decoration: none;
 }
 
+#articulosFavoritos{
+  margin-bottom: 10%;
+}
 
+#sacarFavs{
+  background-color: red;
+}
 
 
 .carousel1{
@@ -1014,13 +1024,17 @@ a.boton_deHome2:hover{
   color: #000!important;
 }
 
-.boton_logOut:hover{
-  opacity: 1!important;
+.sin-peliculas{
+  background-color: red;
+  width: 37%;
+  text-align: center;
+
+  margin: 0 auto;
+  margin-bottom: 24%;
+  margin-top: 12%;
+  border-radius: 20px;
 }
 
-.div_contenedor_nav{
-  position: absolute;
-}
 
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {

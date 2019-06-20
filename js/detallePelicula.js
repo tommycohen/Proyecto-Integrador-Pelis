@@ -43,18 +43,23 @@ console.log('Hubo un problema con la petición Fetch:' + error.message);
 
 
 
+
+
 if (localStorage.getItem("usuario")== null) {
   document.querySelector(".button-fav").style.display = "none"
 }else {
   document.querySelector(".button-fav").style.display = "block"
 }
 
-
-
-
-
-
-
+var favoritos = document.querySelector(".button-favorito")
+favoritos.onclick = function (){
+  UIkit.notification({
+   message: 'Agregaste esta pelicula como favorita.',
+   status: 'warning',
+   pos: 'top-center',
+   timeout: 3000,
+ })
+}
 
 
 var recomendacionPelicula = "https://api.themoviedb.org/3/movie/"+detalles+"/recommendations?api_key=ebcc7d54892cbf6b9dd7c194bd052f2f&page=1"
