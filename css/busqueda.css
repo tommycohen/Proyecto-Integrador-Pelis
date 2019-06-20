@@ -2,7 +2,6 @@
     font-family: monaco;
     box-sizing: border-box;
 }
-
 img.estrenos-imagenes {
     width: 100%;
     border: white;
@@ -32,6 +31,7 @@ img.estrenos-imagenes {
         border-radius: 20px;
         border-style: double;
         border-color: black;
+        margin-top: 3%;
       }
 
     a{
