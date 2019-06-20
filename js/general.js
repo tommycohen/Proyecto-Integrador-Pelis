@@ -84,9 +84,10 @@ if (localStorage.getItem("usuario")== null) {
   }
 
 document.querySelector(".boton_logOut").onclick = function() {
-  localStorage.clear()
+localStorage.removeItem ("usuario")
   location.reload();
- }
+}
+
 
 
 
