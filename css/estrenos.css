@@ -429,11 +429,7 @@ a.item{
     bottom: 22px;
     left: 205px;
 }
-button.dropbtn {
-    position: relative;
-    bottom: 22px;
-    left: 212px;
-}
+
 
 button.w3-button.w3-black {
     position: relative;
@@ -449,4 +445,23 @@ button.w3-button.w3-black {
 form.busqueda{
   display: none;
 }
+button.dropbtn {
+    position: relative;
+    bottom: 36px;
+    left: 537px;
+    top: -24px;
+}
+a.boton_deHome {
+    position: relative;
+    bottom: 41px;
+    left: 565px;
+    z-index: 1;
+}
+button.w3-button.w3-black {
+    position: relative;
+    bottom: 22px;
+    left: 458px;
+    background-color: rgb(104,242,204)!important;
+}
+
 }
