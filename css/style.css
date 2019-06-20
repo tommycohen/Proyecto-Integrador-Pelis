@@ -2,6 +2,10 @@
     font-family: monaco;
     box-sizing: border-box;
 }
+a:hover{
+  outline: 0;
+  opacity: 0.5;
+}
 
 #estrenos-carousel{
   color: white;
@@ -23,7 +27,13 @@
   text-decoration: none;
 }
 
+#articulosFavoritos{
+  margin-bottom: 10%;
+}
 
+#sacarFavs{
+  background-color: red;
+}
 
 
 .carousel1{

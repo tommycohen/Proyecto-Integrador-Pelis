@@ -25,7 +25,7 @@ for (var i = 0; i < listaDeFavoritos.length; i++) {
       var id = arrayDePeliculasPorGeneros.id
       var titulo = arrayDePeliculasPorGeneros.title
       var imagen = arrayDePeliculasPorGeneros.poster_path
-      li="<article class='peliculasGeneros'>"
+      li="<article id='articulosFavoritos' class='peliculasGeneros'>"
       li+= "<a href=detallePelicula.html?id="
       li += id
       li +=">"
@@ -38,7 +38,7 @@ for (var i = 0; i < listaDeFavoritos.length; i++) {
       li+=">"
       li+=titulo
       li+="</a></h2>"
-      li+= '<button onclick= "sacarFavorito('+id+')"> Sacar de favoritas </button> </article>'
+      li+= '<button id="sacarFavs" onclick= "sacarFavorito('+id+')"> Sacar de favoritas </button> </article>'
 
       // document.querySelector(".contenedor").innerHTML += "<article class='peliculasGeneros'><img class='generos-imagenes' src='https://image.tmdb.org/t/p/original" + imagen + "' alt='img producto'><h2 class='titulo-producto'><a href=detallePelicula.html?id=" + id +  ">" + titulo + "</a></h2></article>"
       document.querySelector(".contenedor").innerHTML += li
