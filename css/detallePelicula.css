@@ -171,6 +171,13 @@ img.estrenos-imagenes{
   border-color: white;
 }
 
+li.generos a:hover{
+  color: white;
+  opacity: 0.5;
+  text-decoration: none;
+  
+}
+
 @media screen and (max-width: 600px) {
   a.item{
     position: relative;
