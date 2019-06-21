@@ -5,6 +5,8 @@
 a:hover{
   outline: 0;
   opacity: 0.5;
+  color: black;
+  text-decoration: none;
 }
 
 #estrenos-carousel{
