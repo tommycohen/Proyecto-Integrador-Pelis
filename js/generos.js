@@ -15,7 +15,8 @@ fetch(urlGeneros)
 
   var arrayDePeliculasPorGeneros= data.results
   var li
-  for (var i = 0; i < arrayDePeliculasPorGeneros.length; i++) {
+  for (var i = 0; i < 6; i++) {
+    document.querySelector(".verMenosPelis").style.display = "none"
     if(arrayDePeliculasPorGeneros[i].poster_path!=null){
     var id = arrayDePeliculasPorGeneros[i].id
     var titulo = arrayDePeliculasPorGeneros[i].title
@@ -26,7 +27,7 @@ fetch(urlGeneros)
     li +=">"
     li+= "<img class='generos-imagenes' src='https://image.tmdb.org/t/p/original"
     li+=imagen
-    li+= "' alt='img producto'>" 
+    li+= "' alt='img producto'>"
     li+= "<h2 class='titulo-producto'>"
     li+= "<a href=detallePelicula.html?id="
     li+=id
@@ -37,7 +38,42 @@ fetch(urlGeneros)
     // document.querySelector(".contenedor").innerHTML += "<article class='peliculasGeneros'><img class='generos-imagenes' src='https://image.tmdb.org/t/p/original" + imagen + "' alt='img producto'><h2 class='titulo-producto'><a href=detallePelicula.html?id=" + id +  ">" + titulo + "</a></h2></article>"
     document.querySelector(".contenedor").innerHTML += li
 }
-  }
+}
+
+document.querySelector(".verMenosPelis").onclick = function(e){
+  document.querySelector(".verMasPelis").style.display = "block"
+  document.querySelector(".verMenosPelis").style.display = "none"
+  location.reload ()
+}
+  document.querySelector(".verMasPelis").onclick  = function(elementos){
+   document.querySelector(".verMasPelis").style.display = "none"
+   document.querySelector(".verMenosPelis").style.display = "block"
+  var arrayDePeliculasPorGeneros= data.results
+   for (var i = 6; i < arrayDePeliculasPorGeneros.length; i++) {
+     document.querySelector(".verMenosPelis").style.display = "block"
+     if(arrayDePeliculasPorGeneros[i].poster_path!=null){
+     var id = arrayDePeliculasPorGeneros[i].id
+     var titulo = arrayDePeliculasPorGeneros[i].title
+     var imagen = arrayDePeliculasPorGeneros[i].poster_path
+     li="<article class='peliculasGeneros'>"
+     li+= "<a href=detallePelicula.html?id="
+     li += id
+     li +=">"
+     li+= "<img class='generos-imagenes' src='https://image.tmdb.org/t/p/original"
+     li+=imagen
+     li+= "' alt='img producto'>"
+     li+= "<h2 class='titulo-producto'>"
+     li+= "<a href=detallePelicula.html?id="
+     li+=id
+     li+=">"
+     li+=titulo
+     li+="</a></h2></article>"
+
+     // document.querySelector(".contenedor").innerHTML += "<article class='peliculasGeneros'><img class='generos-imagenes' src='https://image.tmdb.org/t/p/original" + imagen + "' alt='img producto'><h2 class='titulo-producto'><a href=detallePelicula.html?id=" + id +  ">" + titulo + "</a></h2></article>"
+     document.querySelector(".contenedor").innerHTML += li
+ }
+}
+}
 })
 
 .catch(function(error) {
@@ -67,6 +103,6 @@ var unGenero = data.genres
 })
 .catch(function(error) {
 console.log('Hubo un problema con la petición Fetch:' + error.message);
-});
+})
 
 })

@@ -78,3 +78,20 @@ img.estrenos-imagenes {
     bottom: 8px;
     left: 65px;
 }
+
+button.verMasPelis{
+  width: 26%;
+    border-radius: 50px;
+    position: relative;
+    right: -500px;
+    background-color: gainsboro;
+}
+
+button.verMenosPelis{
+
+width: 26%;
+    border-radius: 50px;
+    position: relative;
+    right: -500px;
+    background-color: gainsboro;
+}
