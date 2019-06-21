@@ -184,18 +184,40 @@ li.generos a:hover{
       bottom: 22px;
       left: 205px;
   }
-  button.dropbtn {
-      position: relative;
-      bottom: 22px;
-      left: 212px;
-  }
 
-  button.w3-button.w3-black {
-      position: relative;
-      bottom: 22px;
-      left: 184px;
-      background-color: rgb(104,242,204)!important;
-  }
+  article.peliculas {
+    float: left;
+    width: 30%;
+    margin-right: 5%;
+    background-color: #61F3CC;
+    height: 345px;
+    margin-bottom: 10%;
+}
+article.peliculas:nth-child(3n){
+  margin-right: 0%;
+}
+
+button.subtitulo {
+    font-size: 14px;
+    background-color: white;
+    color: black;
+    width: 33%;
+    margin: 0 auto;
+    border-radius: 20px;
+    border-style: double;
+    border-color: black;
+    text-align: center;
+    top: 10%;
+    height: 8vh;
+    margin-left: 35%;
+    margin-bottom: 4%;
+    margin-top: 10%;
+    padding-top: 0px;
+}
+
+.button-fav{
+  width: 25%;
+}
 
   .tmdb-logo{
     display: none;
@@ -209,4 +231,56 @@ li.generos a:hover{
     border-color: #6df3cc;
     background-color: black;
   }
+
+
+    button.w3-button.w3-black {
+        position: relative;
+        bottom: 22px;
+        left: 184px;
+        background-color: rgb(104,242,204)!important;
+    }
+
+    .tmdb-logo{
+      display: none;
+    }
+
+    form.busqueda{
+      display: none;
+    }
+
+    a.boton_deHome {
+        position: relative;
+        bottom: 41px;
+        left: 565px;
+        z-index: 1;
+    }
+    button.w3-button.w3-black {
+        position: relative;
+        bottom: 22px;
+        left: 458px;
+        background-color: rgb(104,242,204)!important;
+    }
+    p.boton_log_out {
+        position: relative;
+        bottom: -12px;
+        right: -40px;
+    }
+    a.preferidas {
+        bottom: 76px;
+        right: -219px;
+    }
+
+    a.boton_deHome {
+        display: block!important;
+        position: relative;
+        bottom: 43px;
+        left: 308px;
+        z-index: 1;
+
+    }
+
+    button.dropbtn {
+        position: relative;
+        bottom: 42px;
+        left: 471px;
 }
