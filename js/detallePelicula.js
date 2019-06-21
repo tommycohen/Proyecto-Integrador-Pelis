@@ -112,7 +112,17 @@ fetch(recomendacionPelicula)
 })
 function recomendaciones(){
   document.querySelector("div.contenedor").style.display= "block"
+  document.querySelector(".subtitulo").style.display="none"
+  document.querySelector(".subtitulo2").style.display = "block"
 }
+
+function recomendaciones2(){
+  document.querySelector("div.contenedor").style.display= "none"
+  document.querySelector(".subtitulo2").style.display = "none"
+  document.querySelector(".subtitulo").style.display = "block"
+}
+
+
 function marcarComoFavorito() {
   var queryString = new URLSearchParams(location.search);
   var idPelicula = queryString.get('id');

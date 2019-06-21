@@ -154,6 +154,29 @@ section div.contenedor {
   display: none;
 }
 
+section div.subtitulo2{
+  overflow: hidden;
+  display: none;
+}
+
+.subtitulo2{
+  display: none;
+  font-size: 14px;
+    background-color: white;
+    color: black;
+    width: 30%;
+    margin: 0 auto;
+    border-radius: 20px;
+    border-style: double;
+    border-color: black;
+    text-align: center;
+    top: 10%;
+    height: 6vh;
+    margin-left: 35%;
+    margin-bottom: 4%;
+    margin-top: 10%;
+}
+
 article.peliculas{
   float: left;
   width: 15%;
@@ -175,7 +198,7 @@ li.generos a:hover{
   color: white;
   opacity: 0.5;
   text-decoration: none;
-  
+
 }
 
 @media screen and (max-width: 600px) {
