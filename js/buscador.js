@@ -42,12 +42,17 @@ fetch("https://api.themoviedb.org/3/search/movie?api_key=7beff09c9fd5a79010c5ce4
       if (resultadoPelicula == 0) {
          var titulo = document.querySelector("h2")
          titulo.innerText="No se han encontrado resultados para:" + " " + buscador
+         var titulo = document.querySelector("h2").style.marginBottom = "550px"
+         var titulo = document.querySelector("h2").style.backgroundColor = "red"
        }else if (resultadoPelicula == null) {
          var titulo = document.querySelector("h2")
          titulo.innerText="No se han encontrado resultados para:" + " " + buscador
+         var titulo = document.querySelector("h2").style.marginBottom = "550px"
+         var titulo = document.querySelector("h2").style.backgroundColor = "red"
        }else {
          var titulo = document.querySelector("h2")
          titulo.innerText="Estos son los resultados de tu busqueda:" + " " + buscador
+          var titulo = document.querySelector("h2").style.backgroundColor = "#76797c"
        }
   })
   .catch(function(error) {
