@@ -1228,8 +1228,10 @@ a.boton_deHome {
     left: 291px;
     z-index: 1;
 }
+
+.lds-ring div{
+  margin-top: 300px;
+  margin-left: 260px;
 }
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) and (max-width: 800px){
 
 }
